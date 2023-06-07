@@ -104,7 +104,7 @@
               <h2>Milot Gashi</h2>
               <p> Këmbët janë të njëjtë, këpucët janë të ndryshëm.</p>
             </div>
-            <p>Shpenzojmë kaq shumë tërë ditën në këpucë dhe në këmbët tona.</p>
+            <p>Kalojmë kaq shumë kohë, tërë ditën në këpucë dhe në këmbët tona.</p>
             <br>
             <p>Vetë kompania është një kompani shumë e suksesshme. Të lindur per te ofruar shërbimin më të vogël, le të jenë një gjë më tej në fluturimin që marrin ato kohë, por duan vërtet, por mbi të gjitha nevojat e atyre që lëvdojini ata!</p>
           </div>
