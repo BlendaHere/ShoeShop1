@@ -81,7 +81,7 @@
               <span>Explore</span>
             </div>
             <div class = "design-title">
-              <a href = "#">Zgjedhja e madhësisë së duhur të këpucës është jetike për shëndetin e këmbëve tuaja.</a>
+              <a href = "#">Zgjedhja e madhësisë së duhur të këpucës është jetike për shëndetin e këmbëve tona.</a>
             </div>
           </div>
           <!-- end of item -->
