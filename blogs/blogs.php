@@ -69,7 +69,7 @@
               <span>Be Sure</span>
             </div>
             <div class = "design-title">
-              <a href = "#">Këtu është një fakt interesant: është më e zakonshme të keni këmbë të ndryshme në madhësi sesa të keni madhësi të njëjtë për të dyja.</a>
+              <a href = "#">Pra është më e zakonshme të keni këmbë të ndryshme në madhësi sesa të keni madhësi të njëjtë për të dyja.</a>
             </div>
           </div>
           <!-- end of item -->
