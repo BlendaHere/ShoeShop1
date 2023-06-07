@@ -291,7 +291,7 @@
 
 </section>
 <!-- sektori i librave te paraqitur perfundon ketu -->
-<!-- sektori i lajmeve fillon ketu -->
+<!-- sektori i permirsimeve fillon ketu -->
 <section class="newsletter">
 
     <form action="">
