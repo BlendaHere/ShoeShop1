@@ -10,7 +10,7 @@ include_once '../header/header.php';
     <div class="contact-box">
         <div class="left"></div>
         <div class="right">
-            <h2>Na Kontaktoni</h2>
+            <h2> Këtu mund të na Kontaktoni</h2>
             <form action = "usercontactinfo.php" method = "post">
             <input type="text" name ="emri" class="field" placeholder="Emri">
             <input type="text" name="email" class="field" placeholder="Email">
