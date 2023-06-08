@@ -1,95 +1,103 @@
-:root{
-    --blue:#0E86D4;
-    --dark-color:#055C9D;
-    --black:#444;
-    --light-color:#666;
-    --border: .1rem solid rgba(0,0,0,.1);
-    --border-hover: .1rem  solid var(--black);
-    --box-shadow: .5rem 1rem rgba(0,0,0,.1);
+:root {
+  --blue: #0E86D4;
+  --dark-color: #055C9D;
+  --black: #444;
+  --light-color: #666;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  --box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin:0; 
-    padding:0;
-    box-sizing: border-box;
-    border:none;
-    text-decoration: none;
-    text-transform:capitalize;
-    transition: all .2s linear;
-    transition: width none;  
-   
-}
-body{
-    background-image:url(img1.jpg);
+* {
+  margin: 5%;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  transition: width none;
 }
 
-  .div1{
-   
-    width: 400px;
-    height: 600px;
-   background-color: #f5f2f0;
-   box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
-    font-family: 'Titillium Web', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    border-radius: 10px;
-    
+body {
+  background-image: url(img1.jpg);
 }
-.div1 h1{
-    text-align: center;
-    padding: 0 0 20px 0;
-    color:#055C9D;
-    text-transform: uppercase;
-    margin-top: 100px;
+
+.div1 {
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  font-family: 'Titillium Web', sans-serif;
+  position: fixed;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
 }
-.div2 input{
-    border: none;
-    width: 195px;
-    height: 36px;
-    padding: 12x 10px;
-    background-color: #f5f2f0;
-    margin: 8px 0;
-    border-bottom: 1px solid #055C9D;
-    margin-left: 20px;
-    text-transform: uppercase;
-    color: #055C9D;
+
+.div1 h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  color: var(--dark-color);
+  text-transform: uppercase;
+  margin-top: 70px;
 }
-.div2 .password1{
-    width: 420px;
-    height: 36px;
+
+.div2 input {
+  border: none;
+  width: 195px;
+  height: 36px;
+  padding: 12px 10px;
+  background-color: #f5f2f0;
+  margin: 8px 0;
+  border-bottom: 1px solid var(--dark-color);
+  margin-left: 55px;
+   margin-top: 5%;
+  text-align: center;
+  color: var(--dark-color);
+
 }
-.div2 button{
-    border-radius: 30px;
-    padding: 14px 20px;
-    margin: 8px 0;
-    width: 345px;
-    cursor: pointer;
-    margin-left: 67px;
-    border: 1px solid #055C9D;
-    color:#0E86D4;
-    background-color: #666;
-    margin-top: 30px;
+
+.div2 .password1 {
+  width: 420px;
+  height: 36px;
 }
-.div2 button:hover{
-    background-color: #055C9D;
-    color: white;
-    cursor: pointer;
+
+.div2 button {
+  border-radius: 30px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  width: 345px;
+  cursor: pointer;
+  margin-left: 67px;
+  border: 1px solid var(--dark-color);
+  color: var(--blue);
+  background-color: var(--light-color);
+  margin-top: 30px;
 }
-.div2 h5 a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #055C9D;
+
+.div2 button:hover {
+  background-color: var(--dark-color);
+  color: white;
+  cursor: pointer;
 }
-.div2 h5{
-    text-align:center;
+
+.div2 h5 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--dark-color);
 }
+
+.div2 h5 {
+  text-align: left;
+  margin-top: 5%;
+}
+
 .back-button a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #0E86D4;
+  background-color: var(--blue);
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -97,23 +105,23 @@ body{
   border-radius: 20px;
   border: none;
   cursor: pointer;
-  margin-top: 10%;
+  margin-top: -4%;
+  margin-left: 30%;
 }
 
 .back-button a:hover {
-  background-color: #055C9D;
+  background-color: var(--dark-color);
 }
 
 @media screen and (max-width: 480px) {
-    .div1 {
-      max-width: 100%;
-      max-height: none;
-      height: auto;
-      padding: 20px;
-    }
-    
-    .div2 button {
-      max-width: none;
-    }
+  .div1 {
+    max-width: 100%;
+    max-height: none;
+    height: auto;
+    padding: 20px;
   }
-  
+
+  .div2 button {
+    max-width: none;
+  }
+}
