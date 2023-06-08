@@ -318,7 +318,7 @@
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
-                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="price">19.99€ <span>29.99€</span></div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -335,7 +335,7 @@
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
-                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="price">25.99€ <span>39.99€</span></div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -352,7 +352,7 @@
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
-                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="price">35.99€ <span>79.99€</span></div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -369,7 +369,7 @@
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
-                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="price">38.99€ <span>50.99€</span></div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -386,7 +386,7 @@
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
-                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="price">159.99€ <span>200.99€</span></div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -411,7 +411,7 @@
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
-                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="price">99.99€ <span>159.99€</span></div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -428,7 +428,7 @@
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
-                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="price">150.99€ <span>201.99€</span></div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -445,7 +445,7 @@
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
-                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="price">125.99€ <span>209.99€</span></div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -462,7 +462,7 @@
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
-                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="price">49.99€ <span>59.99€</span></div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -503,12 +503,12 @@
     <div class="content">
         <h3>Oferta e ditës</h3>
         <h1>deri në 50% zbritje</h1>
-        <p>Vetë kompania është një kompani shumë e suksesshme. Prandaj ai kërkon njohuri për kohët e dhimbjes, por i linduri nga dhimbja dëshiron të shpëtojë.</p>
+        <p>"Këpucët transformojnë gjuhën e trupit dhe qëndrimin tënd. Ata të rrisin fizikisht dhe emocionalisht." - Christian Louboutin</p>
         <a href="#" class="btn">Bli tani</a>
     </div>
 
     <div class="image">
-        <img src="image/deal-img.jpg" alt="">
+        <img src="image/patika.png" alt="">
     </div>
 
 </section>
