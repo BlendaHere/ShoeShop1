@@ -24,7 +24,7 @@
 
         <div class="header-2">
             <nav class = "navbar">
-                <a href = "../home/index.php">Faqja Kryesore</a>
+                <a href = "../home/index.php">Faqja </a>
                 <a href = "../shop/shop.php">Te Gjitha </a>
                 <a href = "../contactus/contactus.php">Kontakti</a>
                 <a href = "../blogs/blogs.php">Blogjet</a>
