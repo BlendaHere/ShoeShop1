@@ -12,7 +12,7 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:0; 
-    padding:0;
+    padding: 0px;
     box-sizing: border-box;
     border:none;
     text-decoration: none;
@@ -663,7 +663,7 @@ section{
     background:url(image/letter-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment:fixed;
 }
 
 .newsletter form{
@@ -674,10 +674,12 @@ section{
 }
 
 .newsletter form h3{
-    font-size: 2.2rem;
-    color:#fff;
+    font-size: 2rem;
+    color:#000000ad;
     padding-bottom: .7rem;
-    font-weight: normal;
+    font-style:oblique;
+   background-color:#0E86D4;
+    border-style:outset;
 }
 
 .newsletter form .box{
@@ -685,9 +687,13 @@ section{
     margin: .7rem 0;
     padding:1rem 1.2rem;
     font-size: 1.6rem;
-    color:var(--black);
     border-radius: .5rem;
     text-transform: none;
+    border-style:outset;
+    background-color:#a4c0d1;
+
+
+
 }
 @media only screen and (max-width: 768px) {
     .newsletter form {
