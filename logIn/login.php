@@ -2,6 +2,7 @@
 <?php
 require_once 'UserController.php';
 
+
 $user1 = new UserController;
 if(isset($_POST['submit'])){
     $user1->insert($_POST);
@@ -15,6 +16,7 @@ if(isset($_POST['submit'])){
 <section>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <div class="wrapper">
+     
         <header>Kyçu</header>
         <form action="#" method="post">
             
