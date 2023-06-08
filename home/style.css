@@ -715,21 +715,24 @@ section{
     }
     }
 
-.arrivals .arrivals-slider .box{
-    display: flex;
-    align-items:center;
-    gap:1.5rem;
-    padding:2rem 1rem;
-    border:var(--border);
-    margin:1rem 0;
-}
+    .arrivals .arrivals-slider .box {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0.5rem; /* Adjust the padding to make it smaller */
+        border: var(--border);
+        margin: 0.5rem 0; /* Adjust the margin to make it smaller */
+        font-size: 14px; /* Adjust the font size if needed */
+    }
 
 .arrivals .arrivals-slider .box:hover{
     border:var(--border-hover);
 }
 
 .arrivals .arrivals-slider .box .image img{
-    height:15rem;
+    width: 100px; /* Adjust the width of the photo */
+    height: 100px; /* Adjust the height of the photo */
+    object-fit: cover; /* Preserve the aspect ratio of the photo */
 }
 
 .arrivals .arrivals-slider .box .content h3{
@@ -740,7 +743,7 @@ section{
 .arrivals .arrivals-slider .box .content .price{
     font-size: 2.2rem;
     color:var(--black);
-    padding-bottom: .5rem;
+    padding-bottom: 0;
 }
 
 .arrivals .arrivals-slider .box .content .price span{
@@ -750,7 +753,7 @@ section{
 }
 
 .arrivals .arrivals-slider .box .content .stars i{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color:var(--blue);
 } 
 @media screen and (max-width: 768px) {

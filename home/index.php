@@ -314,7 +314,7 @@
 
             <a href="#" class="swiper-slide box">
                 <div class="image">
-                    <img src="image/book-1.png" alt="">
+                    <img src="image/s1.png" alt="">
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
@@ -331,7 +331,7 @@
 
             <a href="#" class="swiper-slide box">
                 <div class="image">
-                    <img src="image/book-2.png" alt="">
+                    <img src="image/s2.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
@@ -348,7 +348,7 @@
 
             <a href="#" class="swiper-slide box">
                 <div class="image">
-                    <img src="image/book-3.png" alt="">
+                    <img src="image/s3.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
@@ -365,7 +365,7 @@
 
             <a href="#" class="swiper-slide box">
                 <div class="image">
-                    <img src="image/book-4.png" alt="">
+                    <img src="image/s4.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
@@ -382,7 +382,7 @@
 
             <a href="#" class="swiper-slide box">
                 <div class="image">
-                    <img src="image/book-5.png" alt="">
+                    <img src="image/s5.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
@@ -407,7 +407,7 @@
 
             <a href="#" class="swiper-slide box">
                 <div class="image">
-                    <img src="image/book-6.png" alt="">
+                    <img src="image/s6.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
@@ -424,7 +424,7 @@
 
             <a href="#" class="swiper-slide box">
                 <div class="image">
-                    <img src="image/book-7.png" alt="">
+                    <img src="image/s7.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
@@ -441,7 +441,7 @@
 
             <a href="#" class="swiper-slide box">
                 <div class="image">
-                    <img src="image/book-8.png" alt="">
+                    <img src="image/s8.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
@@ -458,7 +458,7 @@
 
             <a href="#" class="swiper-slide box">
                 <div class="image">
-                    <img src="image/book-9.png" alt="">
+                    <img src="image/s9.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
@@ -475,7 +475,7 @@
 
             <a href="#" class="swiper-slide box">
                 <div class="image">
-                    <img src="image/book-10.png" alt="">
+                    <img src="image/s10.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>E Re</h3>
