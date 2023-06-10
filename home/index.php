@@ -41,7 +41,50 @@
   height: 100%; /* Make the image fit the height of its container */
   object-fit: cover; /* Ensure the image covers the container without distortion */
 }
+/* //-------------Klasa e featured slider -------*/
+.swiper.featured-slider {
+  width: 100%; /* Set the width of the featured-slider to 100% */
+  height: 450px; /* Adjust the height of the featured-slider to your desired size */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.swiper.featured-slider .swiper-wrapper {
+  display: flex; /* Turn the swiper-wrapper into a flex container */
+  flex-wrap: nowrap; /* Prevent slides from wrapping to the next line */
+  width: max-content; /* Set the width of the swiper-wrapper to the content width */
+}
+
+.swiper.featured-slider .swiper-slide {
+  flex: 0 0 auto; /* Let the slides take their own width */
+  margin-right: 10px; /* Add margin between the swiper slides */
+}
+
+.swiper.featured-slider .box {
+  width: 100%; /* Set the width of the box container to 100% */
+  height: 100%; /* Set the height of the box container to 100% */
+}
+/* ------------------Klasa e reviews --------------------*/
+div.swiper.reviews-slider {
+  display: flex; /* Display the reviews-slider as a flex container */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+div.swiper.reviews-slider .swiper-wrapper {
+  display: flex; /* Display the swiper-wrapper as a flex container */
+  flex-wrap: nowrap; /* Prevent slides from wrapping to the next line */
+}
+
+div.swiper.reviews-slider .swiper-slide {
+  flex: 0 0 auto; /* Let the slides take their own width */
+  margin-right: 0; /* Remove margin between the swiper slides */
+}
+
+div.swiper.reviews-slider .box {
+  width: 100%; /* Set the width of the box container to 100% */
+  height: auto; /* Allow the height of the box container to adjust to content */
+}
 </style>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -566,8 +609,8 @@
 
             <div class="swiper-slide box">
                 <img src="image/pic-1.png" alt="">
-                <h3>john deo</h3>
-                <p> Unë po habitem me këta libra të mrekullueshëm </p>
+                <h3>John Deo</h3>
+                <p> Unë po habitem me këto Këpucët e mrekullueshëm </p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -579,7 +622,7 @@
 
             <div class="swiper-slide box">
                 <img src="image/pic-2.png" alt="">
-                <h3>sena paul</h3>
+                <h3>Sena Paul</h3>
                 <p>E mrekullueshme :)</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -592,7 +635,7 @@
 
             <div class="swiper-slide box">
                 <img src="image/pic-3.png" alt="">
-                <h3>mark berk</h3>
+                <h3>Mark Berk</h3>
                 <p>Sa më shpesh që hyjë aq më shumë më pëlqejnë. </p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -604,8 +647,8 @@
             </div>
             <div class="swiper-slide box">
                 <img src="image/pic-4.png" alt="">
-                <h3>lore div</h3>
-                <p>Janë libra fantastik ia u sugjerojë të gjithve.</p>
+                <h3>Lore Div</h3>
+                <p>Janë Këpucë fantastike ia u sugjerojë të gjithve.</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -617,7 +660,7 @@
 
             <div class="swiper-slide box">
                 <img src="image/pic-5.png" alt="">
-                <h3>jim khan</h3>
+                <h3>Jim Khan</h3>
                 <p>E kënaqur me punën tuaj, Jeni më të mirët☻</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -630,7 +673,7 @@
 
             <div class="swiper-slide box">
                 <img src="image/pic-6.png" alt="">
-                <h3>elsa bob</h3>
+                <h3>Elsa Bob</h3>
                 <p>Shkelqyeshëm</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -657,12 +700,12 @@
 
         <div class="box">
             <h3>Lokacioni ynë</h3>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Lipjan </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Gjilan  </a>
             <a href="#"> <i class="fas fa-map-marker-alt"></i> Prishtinë </a>
             <a href="#"> <i class="fas fa-map-marker-alt"></i> Prizeren </a>
             <a href="#"> <i class="fas fa-map-marker-alt"></i> Pejë </a>
             <a href="#"> <i class="fas fa-map-marker-alt"></i> Ferizaj </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Gjilan </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Lipjan </a>
         </div>
 
         <div class="box">
