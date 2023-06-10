@@ -762,5 +762,6 @@ div.swiper.reviews-slider .box {
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <!-- linku i js-->
     <script src="JS.js"></script>
+    
 </body>
 </html>
