@@ -153,7 +153,7 @@ div.swiper.reviews-slider .box {
                 <a href="#" class="swiper-slide"><img src="image/shoe3.png" alt=""></a>
                 <a href="#" class="swiper-slide"><img src="image/shoe4.png" alt=""></a>
                 <a href="#" class="swiper-slide"><img src="image/shoe5.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="image/shoe7.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/shoe6.png" alt=""></a>
             </div>
             <img src="image/stand.png" class="stand" alt="">
         </div>
