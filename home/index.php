@@ -65,7 +65,7 @@
     <selection class ="home" id ="home">
         <div class ="row">
         <div class ="content">
-            <h3>Deri në 75% zbritje</h3>
+            <h3>Deri në 70% zbritje</h3>
             <p>Sometimes in life, we need good shoes for a good walk,and a good life!
             <b> •Colleen Hoover• </b></p>
             <a href ="#" class ="btn">Bli Tani</a>
