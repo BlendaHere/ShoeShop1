@@ -8,6 +8,38 @@
     height: 50%;
     position: relative;
     transition-property: transform;
+} html, body {
+  height: 100%; /* Set the height of the HTML and body elements to 100% */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+
+.swiper.arrivals-slider {
+  width: 100%; /* Set the width of the arrivals-slider to 100% */
+  height: 250px; /* Adjust the height of the arrivals-slider to your desired size */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.swiper.arrivals-slider .swiper-wrapper {
+  display: flex; /* Turn the swiper-wrapper into a flex container */
+  flex-wrap:nowrap ; /* Prevent slides from wrapping to the next line */
+  width: max-content; /* Set the width of the swiper-wrapper to the content width */
+}
+
+.swiper.arrivals-slider .swiper-slide {
+  flex: 0 0 auto; /* Let the slides take their own width */
+  margin-right: 10px; /* Add margin between the swiper slides */
+}
+
+.swiper.arrivals-slider .image {
+  width: 100%; /* Set the width of the image container to 100% */
+  height: 100%; /* Set the height of the image container to 100% */
+}
+
+.swiper.arrivals-slider .image img {
+  width: 100%; /* Make the image fit the width of its container */
+  height: 100%; /* Make the image fit the height of its container */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
