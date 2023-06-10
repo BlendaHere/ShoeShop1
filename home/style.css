@@ -408,7 +408,7 @@ section{
 }
 
 .home .row .books-slider a:hover img{
-    transform: scale(.9);
+    transform: scale(1.9);
 }
 .home .row .content h3{
     color:var(--black);
