@@ -1,14 +1,12 @@
 <?php
-class Database{
-    public $pdo;
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$database = 'shoeshop';
 
-    public function __construct(){
-        try{
-            session_start();
-            $link = new PDO('mysql:host=localhost;dbname=shoeshop', 'root','');
-            $this->pdo = $link;
-        }catch(PDOException $exception){
-            die($exception->getMessage());
-        }
-    }
+$connection = mysqli_connect($host, $user, $password, $database);
+
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
 }
+?>

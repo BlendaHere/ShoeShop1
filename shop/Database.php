@@ -4,11 +4,12 @@ class Database{
 
     public function __construct(){
         try{
-            session_start();
-            $link = new PDO('mysql:host=localhost;dbname=signupdata', 'root','');
+            $link = new PDO('mysql:host=localhost;dbname=shoeshop', 'root', '');
+            $link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->pdo = $link;
         }catch(PDOException $exception){
-            die($exception->getMessage());
+            // Log the error or display a user-friendly message
+            die("Database connection error: " . $exception->getMessage());
         }
     }
 }

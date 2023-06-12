@@ -1,5 +1,16 @@
 <?php
 require_once "MenuController.php";
+
+$m = new MenuController;
+$allMenu = $m->readData();
+
+if (isset($_GET['deleted']) && $_GET['deleted'] === 'true') {
+    echo '
+    <div class="alert-container">
+        <div class="alert-message">Menu item deleted successfully!</div>
+    </div>
+    ';
+}
 ?>
 
 <style>
@@ -39,6 +50,25 @@ require_once "MenuController.php";
         padding: 12px 15px;
     }
 
+    .alert-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        text-align: center;
+        display: none; /* Hide initially */
+        z-index: 9999; /* Ensure the alert is displayed on top of other elements */
+    }
+
+    .alert-message {
+        margin: 0;
+        font-weight: bold;
+    }
+
     .link {
         text-decoration: none;
         color: red;
@@ -73,11 +103,7 @@ require_once "MenuController.php";
             </tr>
         </thead>
         <tbody>
-            <?php
-            $m = new MenuController;
-            $allMenu = $m->readData();
-            foreach ($allMenu as $menu) : ?>
-
+            <?php foreach ($allMenu as $menu) : ?>
                 <tr>
                     <td><?php echo $menu['menu_image'] ?></td>
                     <td><?php echo $menu['menu_title'] ?></td>
@@ -91,10 +117,30 @@ require_once "MenuController.php";
     </table>
 
     <button onclick="goBack()">Back</button>
+    <button onclick="goToCreateMenu()">Krijo</button>
 
     <script>
         function goBack() {
-window.location.href = 'shop.php';
+            window.location.href = 'shop.php';
         }
+
+        function goToCreateMenu() {
+            window.location.href = 'create-menu.php';
+        }
+
+        // Show the alert container and hide it after a certain time
+        function showAlert() {
+            var alertContainer = document.querySelector('.alert-container');
+            if (alertContainer) {
+                alertContainer.style.display = 'block'; // Show the alert container
+
+                setTimeout(function () {
+                    alertContainer.style.display = 'none'; // Hide the alert container
+                }, 3000); // Adjust the time in milliseconds (e.g., 3000 = 3 seconds)
+            }
+        }
+
+        // Call the showAlert function when the page is loaded
+        window.addEventListener('DOMContentLoaded', showAlert);
     </script>
 </div>

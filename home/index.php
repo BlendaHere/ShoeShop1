@@ -1,5 +1,26 @@
 
     <title>ShoeShop</title>
+    <?php
+require_once 'Database.php';
+
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Get the email value from the form
+    $email = $_POST['email'];
+
+    // Create a new instance of the Database class
+    $db = new Database();
+
+    // Insert the email into the database
+    $db->insertEmail($email);
+
+    // Redirect the user back to the homepage or display a success message
+    header('Location: index.php');
+    exit();
+}
+?>
+
+
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
    <style>
     .swiper-slide {
@@ -378,7 +399,8 @@ div.swiper.reviews-slider .box {
 <!-- sektori i permirsimeve fillon ketu -->
 <section class="newsletter">
 
-    <form action="">
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+
         <h3>Abonohuni për përditësimet më të fundit</h3>
         <input type="email" name="" placeholder="Shkruaj email-in tuaj..." id="" class="box">
         <input type="submit" value="abonohu" class="btn">

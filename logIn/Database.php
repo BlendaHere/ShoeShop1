@@ -1,15 +1,19 @@
-<?php
-class Database{
-    public $pdo;
+class Database {
+    private $host = 'localhost';
+    private $user = 'root';
+    private $password = '';
+    private $database = 'shoeshop';
+    private $connection;
 
-    public function __construct(){
-        try{
-            session_start();
-            $link = new PDO('mysql:host=localhost;dbname=shoeshop', 'root','');
-            $this->pdo = $link;
-        }catch(PDOException $exception){
-            die($exception->getMessage());
+    public function __construct() {
+        $this->connection = new mysqli($this->host, $this->user, $this->password, $this->database);
+
+        if ($this->connection->connect_error) {
+            die("Connection failed: " . $this->connection->connect_error);
         }
     }
+
+    public function getConnection() {
+        return $this->connection;
+    }
 }
-?>

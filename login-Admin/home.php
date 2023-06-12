@@ -102,6 +102,7 @@ if (!isset($_SESSION['username'])) {
             font-weight: bold;
             text-decoration: none;
             transition: background-color 0.3s ease;
+            
         }
 
         .back-btn:hover {
