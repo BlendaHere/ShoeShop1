@@ -1,5 +1,5 @@
 
-    <title>ShoeShop</title>
+    <title>Home Shoess Shop </title>
     <?php
 require_once 'Database.php';
 
