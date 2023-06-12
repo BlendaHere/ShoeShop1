@@ -1,3 +1,6 @@
+<?php 
+include_once '../header/header.php';
+?>
 <style>
     :root {
         --blue: #0E86D4;
