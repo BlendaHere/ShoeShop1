@@ -113,7 +113,7 @@ div.swiper.reviews-slider .box {
    
     <header class="header">
         <div class="header-1">
-            <a href="#" class="logo"><i class = "fas fa-book"></i>ShoeShop</a>
+            <a href="#" class="logo"><i class = "fas fa-shoe-prints"></i>ShoeShop</a>
            
             <form action = "" class = "search-form">
                 <input type = "search" name ="" placeholder = "Kërko këtu..." id="search-box">
