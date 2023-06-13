@@ -1,7 +1,7 @@
 <?php
 require_once '../Database.php';
 
-class UserController{
+class userController{
     public $db;
 
     public function __construct(){
