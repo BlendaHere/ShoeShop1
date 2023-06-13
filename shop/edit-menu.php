@@ -1,5 +1,6 @@
 <?php
 require_once 'MenuController.php';
+
 if (isset($_GET['id'])) {
     $menuId = $_GET['id'];
 }
@@ -17,11 +18,20 @@ if (isset($_POST['submit'])) {
     if (!empty($_FILES['image']['name'])) {
         $targetDir = './upload/';
         $targetFile = $targetDir . basename($_FILES['image']['name']);
+        $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
 
+        // Verify file extension
+        $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
+        if (!in_array($imageFileType, $allowedExtensions)) {
+            echo "Error: Only JPG, JPEG, PNG, and GIF files are allowed.";
+            return;
+        }
+
+        // Move uploaded file to target directory
         if (move_uploaded_file($_FILES['image']['tmp_name'], $targetFile)) {
             $image = $targetFile;
         } else {
-            echo "Error: Failed to upload the image.";
+            echo "Error: Failed to upload the image. Error code: " . $_FILES['image']['error'];
             return;
         }
     } else {
@@ -101,9 +111,10 @@ if (isset($_POST['submit'])) {
         <input type="submit" name="submit" value="Përditësimi">
     </form>
     <button onclick="goBack()">Back</button>
+</div>
+
 <script>
     function goBack() {
         window.location.href = 'menuDashboard.php';
     }
 </script>
-</div>
