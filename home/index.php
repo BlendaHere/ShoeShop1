@@ -135,6 +135,8 @@ div.swiper.reviews-slider .box {
                 <a href = "../blogs/blogs.php">Blogjet</a>
                 <a href = "../signUp/signup.php">Regjistrohu</a>
                 <a href = "../logIn/login.php">Kyçuni</a>
+                <a href="../wishlist/wishlist.php"><i class="fas fa-heart"></i></a> 
+
                 
             </nav>
         </div>
