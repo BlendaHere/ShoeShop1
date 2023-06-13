@@ -129,13 +129,13 @@ div.swiper.reviews-slider .box {
 
         <div class="header-2">
             <nav class = "navbar">
+                <a href="../wishlist/wishlist.php"><i class="fas fa-heart"></i></a> 
                 <a href = "../home/index.php">Faqja Kryesore</a>
                 <a href = "../shop/shop.php">Te Gjitha </a>
                 <a href = "../contactus/contactus.php">Kontakti</a>
                 <a href = "../blogs/blogs.php">Blogjet</a>
                 <a href = "../signUp/signup.php">Regjistrohu</a>
                 <a href = "../logIn/login.php">Kyçuni</a>
-                <a href="../wishlist/wishlist.php"><i class="fas fa-heart"></i></a> 
 
                 
             </nav>
