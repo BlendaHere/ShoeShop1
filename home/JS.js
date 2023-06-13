@@ -2,9 +2,7 @@ searchForm = document.querySelector('.search-form');
 document.querySelector('#search-btn').onclick = ()=>{
     searchForm.classList.toggle('active');
 }
-function refreshPage() {
-  location.reload(true);
-}
+
 /*
 let loginForm = document.querySelector('.login-form-container');
 document.querySelector('#login-btn').onclick =() =>{

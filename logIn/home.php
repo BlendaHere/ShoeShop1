@@ -1,18 +1,9 @@
-<?php 
-$hide = "";
+<?php
 session_start();
 
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['email'])) {
     header("location: login.php");
-    exit(); // Add this line to prevent further execution
-}
-
-if (isset($_SESSION['role'])) {
-    if ($_SESSION['role'] == "admin") {
-        $hide = "";
-    } else {
-        $hide = "hide";
-    }
+    exit;
 }
 ?>
 
@@ -23,12 +14,12 @@ if (isset($_SESSION['role'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <style>
         :root {
             --blue: #0E86D4;
-            --dark-color: #055C9D;
         }
 
         body {
@@ -78,6 +69,10 @@ if (isset($_SESSION['role'])) {
             border-radius: 10px;
         }
 
+        .content h2 {
+            margin-bottom: 20px;
+        }
+
         .content table {
             width: 100%;
             border-collapse: collapse;
@@ -105,43 +100,55 @@ if (isset($_SESSION['role'])) {
             font-weight: bold;
             text-decoration: none;
             transition: background-color 0.3s ease;
-            
         }
 
         .back-btn:hover {
-            background-color: #055C9D;
+            background-color: #0b6db5;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="logo">Faqja kryesore</div>
-        <nav>
-            <ul class="navbar">
-                <li><a href="logout.php">Log out</a></li>
-                <li><a href="../shop/menuDashboard.php" class="<?php echo $hide ?>">Dashboard-i</a></li>
-                <li><a href="../shop/create-menu.php" class="<?php echo $hide ?>">Krijoni</a></li>
-                <?php if($_SESSION['role'] == 'admin'){
-                    echo("");
-                } ?>
-            </ul>
-        </nav>
+        <div class="logo">User Dashboard</div>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
     </header>
 
     <div class="content">
-        <h2>Këshilltarët</h2>
+        <h2>Welcome, <?php echo $_SESSION['email']; ?></h2>
         <table>
-            <tr>
-                <th>Username</th>
-                <td><?php echo $_SESSION['username']; ?></td>
-            </tr>
-            <!-- Add more table rows with relevant information -->
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th>Birthday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                require_once 'userController.php';
+                $user1 = new userController;
+                $data = $user1->readData();
+
+                foreach ($data as $row) {
+                    echo "<tr>";
+                    echo "<td>{$row['firstName']}</td>";
+                    echo "<td>{$row['lastName']}</td>";
+                    echo "<td>{$row['emailAddress']}</td>";
+                    echo "<td>{$row['birthday']}</td>";
+                    echo "</tr>";
+                }
+                ?>
+            </tbody>
         </table>
-
-        <a href="../home/index.php" class="back-btn">Kthehu në Kryefaqe</a>
+        <a href="#" class="back-btn">Go Back</a>
     </div>
-
 </body>
 
 </html>

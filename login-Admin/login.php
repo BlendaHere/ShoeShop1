@@ -22,6 +22,30 @@ if(isset($_SESSION['username'])){
         <input type="password" name="password" placeholder="Fjalëkalimi"> <br> <br>
 
         <input type="submit" name="loginBtn" value="Kyçu">
+        <div class="back-button">
+  <a href="../home/index.php">Kthehu ne Kryefaqe</a>
+</div>
+
+<style>
+  .back-button {
+    margin-top: 20px;
+    text-align: center;
+    margin-right:10px;
+  }
+
+  .back-button a {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    background-color: transparent;
+    color: lightblue;
+    text-decoration: none;
+  }
+
+  .back-button a:hover {
+    background-color: #555;
+  }
+</style>
     </form>
     <?php 
     require_once 'loginValidate.php';

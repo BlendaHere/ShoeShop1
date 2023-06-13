@@ -105,7 +105,6 @@ div.swiper.reviews-slider .box {
   height: auto; /* Allow the height of the box container to adjust to content */
 }
 </style>
-<button onclick="refreshPage()">Refresh Page</button>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -114,7 +113,8 @@ div.swiper.reviews-slider .box {
     <header class="header">
         <div class="header-1">
             <a href="#" class="logo"><i class = "fas fa-shoe-prints"></i>ShoeShop</a>
-           
+
+          <!-- <a href='#'  class="logo"><i class ="fa-sharp fa-light fa-boot-heeled"></i>ShoeShop</a>       -->
             <form action = "" class = "search-form">
                 <input type = "search" name ="" placeholder = "Kërko këtu..." id="search-box">
                 <label for ="search-box" class ="fas fa-search"></label>
@@ -129,7 +129,7 @@ div.swiper.reviews-slider .box {
 
         <div class="header-2">
             <nav class = "navbar">
-                <a href="../wishlist/wishlist.php"><i class="fas fa-heart"></i></a> 
+            <a href="../wishlist/wishlist.php"><i class="fas fa-heart"></i></a> 
                 <a href = "../home/index.php">Faqja Kryesore</a>
                 <a href = "../shop/shop.php">Te Gjitha </a>
                 <a href = "../contactus/contactus.php">Kontakti</a>
@@ -232,7 +232,7 @@ div.swiper.reviews-slider .box {
             <div class="swiper-slide box">
                 <div class="icons">
                     <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
+                    <a href="wishlist.php" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-eye"></a>
                 </div>
                 <div class="image">
