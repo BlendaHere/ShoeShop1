@@ -96,8 +96,9 @@ if (isset($_GET['deleted']) && $_GET['deleted'] === 'true') {
         <thead>
             <tr>
                 <th>Menu image</th>
-                <th>Menu description</th>
-                <th>Price</th>
+                <th>Menu title</th>
+                <th>Menu body</th>
+                <th>Menu price</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
@@ -109,15 +110,15 @@ if (isset($_GET['deleted']) && $_GET['deleted'] === 'true') {
                     <td><?php echo $menu['menu_title'] ?></td>
                     <td><?php echo $menu['menu_body'] ?></td>
                     <td><?php echo $menu['menu_price'] ?></td>
-                    <td><a href="edit-menu.php?id=<?php echo $menu['id']; ?>">Edito</a></td>
-                    <td><a href="delete-menu.php?id=<?php echo $menu['id']; ?>">Fshije</a></td>
+                    <td><a href="edit-menu.php?id=<?php echo $menu['id']; ?>">Edit</a></td>
+                    <td><a href="delete-menu.php?id=<?php echo $menu['id']; ?>">Delete</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
 
     <button onclick="goBack()">Back</button>
-    <button onclick="goToCreateMenu()">Krijo</button>
+    <button onclick="goToCreateMenu()">Create</button>
 
     <script>
         function goBack() {

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../Database.php';
+require_once 'Database.php';
 
 class userController
 {
@@ -8,7 +8,7 @@ class userController
 
     public function __construct()
     {
-        $this->db = new Database;
+        $this->db = new Database();
     }
 
     public function isValidUser($email, $password)
@@ -46,7 +46,8 @@ class userController
         $query->bindParam(':pass', $request['pass']);
         $query->execute();
 
-        return header('Location: ../shop/shop.php');
+        header('Location: ../shop/shop.php');
+        exit;
     }
 
     public function getUserRole($email)
@@ -54,6 +55,21 @@ class userController
         // Since the 'usersignup' table does not have a 'role' column, you might need to adjust this logic accordingly
         // For example, you could assign a default role to all users or modify the table structure to include a 'role' column
         return 'user';
+    }
+}
+
+$user1 = new userController();
+
+if (isset($_POST['submit'])) {
+    // Check if the entered credentials are valid
+    if ($user1->isValidUser($_POST['email'], $_POST['pass'])) {
+        // Redirect the user to the specified page after successful login
+        header('Location: home.php');
+        exit;
+    } else {
+        // Display an error message if the credentials are invalid
+        echo "Invalid email or password. Please try again.";
+        exit;
     }
 }
 ?>

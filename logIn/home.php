@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['email'])) {
+if (!isset($_SESSION['username'])) {
     header("location: login.php");
     exit;
 }
@@ -15,7 +15,6 @@ if (!isset($_SESSION['email'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
 
     <style>
         :root {
@@ -103,7 +102,7 @@ if (!isset($_SESSION['email'])) {
         }
 
         .back-btn:hover {
-            background-color: #0b6db5;
+            background-color: #055C9D;
         }
     </style>
 </head>
@@ -111,44 +110,20 @@ if (!isset($_SESSION['email'])) {
 <body>
     <header>
         <div class="logo">User Dashboard</div>
-        <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="logout.php">Logout</a></li>
-        </ul>
+        <nav>
+            <ul class="navbar">
+                <li><a href="logout.php">Log out</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="content">
-        <h2>Welcome, <?php echo $_SESSION['email']; ?></h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email Address</th>
-                    <th>Birthday</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                require_once 'userController.php';
-                $user1 = new userController;
-                $data = $user1->readData();
-
-                foreach ($data as $row) {
-                    echo "<tr>";
-                    echo "<td>{$row['firstName']}</td>";
-                    echo "<td>{$row['lastName']}</td>";
-                    echo "<td>{$row['emailAddress']}</td>";
-                    echo "<td>{$row['birthday']}</td>";
-                    echo "</tr>";
-                }
-                ?>
-            </tbody>
-        </table>
-        <a href="#" class="back-btn">Go Back</a>
+        <h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
+        <!-- Add user-specific content here -->
+        
+        <a href="../home/index.php" class="back-btn">Back to Homepage</a>
     </div>
+
 </body>
 
 </html>

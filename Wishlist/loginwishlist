@@ -1,22 +1,16 @@
 <?php
 session_start();
 
-// Include database connection
-include '../Database.php';
-
 // Check if user is already signed in
 if (isset($_SESSION['email'])) {
     header('location: wishlist.php');
     exit;
 }
 
-$message = '';
+// Include database connection
+include '../Database.php';
 
-// Validate user input (You can add more validation as per your requirements)
-if (isset($_POST['login'])) {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
+    // Validate user input (You can add more validation as per your requirements)
     if (empty($email) || empty($password)) {
         $message = 'Please enter both email and password.';
     } else {
@@ -31,12 +25,16 @@ if (isset($_POST['login'])) {
         if (mysqli_num_rows($check_user_result) > 0) {
             // User exists, set session variables
             $_SESSION['email'] = $email;
-            header('location: wishlist.php');
-            exit;
         } else {
             $message = 'Invalid email or password.';
         }
     }
+}
+
+// Check if user is signed up
+if (!isset($_SESSION['email'])) {
+    header('location: wishlist.php');
+    exit;
 }
 ?>
 

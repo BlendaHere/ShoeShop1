@@ -3,10 +3,11 @@ require_once 'MenuController.php';
 
 if (isset($_GET['id'])) {
     $menuId = $_GET['id'];
-}
 
 $menu = new MenuController;
 $currentMenu = $menu->edit($menuId);
+}
+
 
 if (isset($_POST['submit'])) {
     // Validate and sanitize the user input

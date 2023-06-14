@@ -9,7 +9,7 @@
 <body>
     <header class="header">
         <div class="header-1">
-            <a href="#" class="logo"><i class = "fas fa-book"></i>ShoeShop</a>
+        <a href="#" class="logo"><i class = "fas fa-shoe-prints"></i>ShoeShop</a>
            
             <form action = "" class = "search-form">
                 <input type = "search" name ="" placeholder = "Kërko këtu..." id="search-box">
@@ -25,12 +25,13 @@
 
         <div class="header-2">
             <nav class = "navbar">
+            <a href="../wishlist/wishlist.php"><i class="fas fa-heart"></i></a> 
                 <a href = "../home/index.php">Faqja Kryesore</a>
-                <a href = "../shop/shop.php">Te gjitha</a>
+                <a href = "../shop/shop.php">Te Gjitha </a>
                 <a href = "../contactus/contactus.php">Kontakti</a>
                 <a href = "../blogs/blogs.php">Blogjet</a>
                 <a href = "../signUp/signup.php">Regjistrohu</a>
-                <a href = "../logIn/login.php">Kyçuni</a>
+                <a href = "../logIn/login.php">Kyçuni</a>uni</a>
             </nav>
         </div>
 

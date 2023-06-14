@@ -38,7 +38,6 @@
         </div>
     </div>
 
-    <!-- Additional JavaScript or footer content if needed -->
 </body>
 
 </html>
