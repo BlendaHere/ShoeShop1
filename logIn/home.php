@@ -1,15 +1,22 @@
 <?php
 session_start();
 
+// Check if the user is logged in, otherwise redirect to the login page
 if (!isset($_SESSION['username'])) {
-    header("location: login.php");
+    header("Location: login.php");
+    exit;
+}
+
+// Logout functionality
+if (isset($_GET['logout'])) {
+    session_destroy();
+    header("Location: login.php");
     exit;
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +24,8 @@ if (!isset($_SESSION['username'])) {
     <title>User Dashboard</title>
 
     <style>
+
+    
         :root {
             --blue: #0E86D4;
         }
@@ -112,13 +121,13 @@ if (!isset($_SESSION['username'])) {
         <div class="logo">User Dashboard</div>
         <nav>
             <ul class="navbar">
-                <li><a href="logout.php">Log out</a></li>
+                <li><a href="?logout=true">Log out</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="content">
-        <h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
+        <h2>Pershendetje Perseri,  <?php echo $_SESSION['username']; ?>!</h2>
         <!-- Add user-specific content here -->
         
         <a href="../home/index.php" class="back-btn">Back to Homepage</a>

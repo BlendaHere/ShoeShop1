@@ -7,32 +7,10 @@ if (isset($_SESSION['email'])) {
     exit;
 }
 
-// Include database connection
-include '../Database.php';
-
-    // Validate user input (You can add more validation as per your requirements)
-    if (empty($email) || empty($password)) {
-        $message = 'Please enter both email and password.';
-    } else {
-        // Check if the user exists in the loginwishlist table
-        $check_user_query = "SELECT * FROM `loginwishlist` WHERE `email` = '$email' AND `password` = '$password'";
-        $check_user_result = mysqli_query($conn, $check_user_query);
-
-        if (!$check_user_result) {
-            die('Query failed');
-        }
-
-        if (mysqli_num_rows($check_user_result) > 0) {
-            // User exists, set session variables
-            $_SESSION['email'] = $email;
-        } else {
-            $message = 'Invalid email or password.';
-        }
-    }
-}
-
-// Check if user is signed up
-if (!isset($_SESSION['email'])) {
+// Process the form submission
+if (isset($_POST['login'])) {
+    // Set session variables
+    $_SESSION['email'] = $_POST['email'];
     header('location: wishlist.php');
     exit;
 }
@@ -49,7 +27,6 @@ if (!isset($_SESSION['email'])) {
 </head>
 
 <body>
-
     <section class="login">
         <h1>Login</h1>
         <form action="" method="POST">
@@ -57,7 +34,6 @@ if (!isset($_SESSION['email'])) {
             <input type="password" name="password" placeholder="Password" required>
             <input type="submit" name="login" value="Login">
         </form>
-        <div class="message"><?php echo isset($message) ? $message : ''; ?></div>
     </section>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>

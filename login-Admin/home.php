@@ -13,6 +13,8 @@ if (isset($_SESSION['role'])) {
     } else {
         $hide = "hide";
     }
+} else {
+    $_SESSION['role'] = ""; // Set a default value if 'role' index is not set
 }
 ?>
 

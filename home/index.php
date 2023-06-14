@@ -232,7 +232,7 @@ div.swiper.reviews-slider .box {
             <div class="swiper-slide box">
                 <div class="icons">
                     <a href="#" class="fas fa-search"></a>
-                    <a href="wishlist.php" class="fas fa-heart"></a>
+                    <a href="../wishlist/wishlist.php" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-eye"></a>
                 </div>
                 <div class="image">
